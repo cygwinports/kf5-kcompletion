@@ -1,0 +1,14 @@
+diff -ur kf5-kcompletion-5.32.0-1.x86_64/origsrc/kcompletion-5.32.0/cmake/rules_PyKF5.py kf5-kcompletion-5.32.0-1.x86_64/src/kcompletion-5.32.0/cmake/rules_PyKF5.py
+--- kf5-kcompletion-5.32.0-1.x86_64/origsrc/kcompletion-5.32.0/cmake/rules_PyKF5.py	2017-03-04 10:08:39.000000000 -0600
++++ kf5-kcompletion-5.32.0-1.x86_64/src/kcompletion-5.32.0/cmake/rules_PyKF5.py	2017-03-27 08:52:45.448803000 -0500
+@@ -43,7 +43,7 @@
+         ["KCompletionBase", "keyBindingMap", ".*", ".*", ".*", rules_engine.function_discard],
+         ["KCompletionBase", "getKeyBindings", ".*", ".*", ".*", rules_engine.function_discard],
+         ["KCompletionBase", "setKeyBindingMap", ".*", ".*", ".*", rules_engine.function_discard],
+-        ["KCompletionMatches", "KCompletionMatches", ".*", ".*", ".*KCompletionMatchesWrapper.*", rules_engine.function_discard],
++        ["KCompletionMatches", "KCompletionMatches", ".*", ".*", ".*KCompletionMatches.*", rules_engine.function_discard],
+     ]
+ 
+ class RuleSet(Qt5Ruleset.RuleSet):
+Only in kf5-kcompletion-5.32.0-1.x86_64/src/kcompletion-5.32.0/cmake: rules_PyKF5.pyc
+Only in kf5-kcompletion-5.32.0-1.x86_64/src/kcompletion-5.32.0: CYGWIN-PATCHES
